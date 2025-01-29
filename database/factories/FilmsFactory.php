@@ -17,7 +17,9 @@ class filmsFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->streetName(),
+            'downloads' => fake()->randomNumber(),
+            'favorites' => fake()->randomNumber(),
         ];
     }
 }
